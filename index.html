@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #message {
+            display: none;
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message">Hello World</p>
+
+    <script>
+        function showMessage() {
+            var message = document.getElementById("message");
+            message.style.display = "block";
+        }
+    </script>
+</body>
+</html>
